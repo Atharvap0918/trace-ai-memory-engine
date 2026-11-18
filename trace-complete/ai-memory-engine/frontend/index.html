@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="description" content="Trace — AI Memory Engine. remember intelligently, retrieve selectively, influence carefully."><title>Trace — AI Memory Engine</title><link rel="icon" type="image/svg+xml" href="/assets/trace-mark.svg"><link rel="preload" href="/assets/fonts/Manrope.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/assets/css/style.css?v=trace-2.2"><script defer src="/assets/vendor/cytoscape.min.js"></script><script defer src="/assets/js/jarvis-brain.js?v=trace-gold-2"></script><script defer src="/assets/js/app.js?v=trace-2.2"></script></head>
+<body>
+<div id="overlay" hidden></div>
+<aside id="sidebar">
+<a class="brand" href="/" data-view="chat"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 20 7.5v9L12 21 4 16.5v-9Z"/><path d="M8 8h8m-4 0v7"/><circle cx="12" cy="17" r="1"/></svg></span><span>Trace<small>Local Memory Layer</small></span></a>
+<button class="new-chat" id="new-chat"><span>＋</span> New conversation <kbd>N</kbd></button>
+<nav aria-label="Main navigation"><a href="/" data-view="chat"><span data-icon="chat"></span>Conversations</a><a href="/dashboard" data-view="dashboard"><span data-icon="dashboard"></span>Memory dashboard</a><a href="/graph" data-view="graph"><span data-icon="graph"></span>Memory graph</a></nav>
+<div class="history-heading">RECENT CONVERSATIONS</div><div id="history"><p class="sidebar-empty">Your conversations will appear here.</p></div>
+<div class="sidebar-bottom"><div class="local-label"><span class="status-dot"></span> Local workspace <span class="tiny-label">V2</span></div><a href="/settings" data-view="settings"><span data-icon="settings"></span>Settings</a><div class="profile"><span class="avatar">U</span><span>Local user<small>Private · on your device</small></span></div></div>
+</aside>
+<div id="shell"><header class="topbar"><button id="menu-button" class="icon-button mobile-only" aria-label="Open navigation"><span data-icon="menu"></span></button><div class="breadcrumbs"><span>Workspace</span><span class="slash">/</span><strong id="page-label">New conversation</strong></div><div class="top-actions"><span id="provider-status" class="provider-chip"><span class="status-dot amber"></span>Provider not connected</span><button id="trace-toggle" class="icon-button" title="Toggle memory inspector" aria-label="Toggle memory inspector"><span data-icon="panel"></span></button></div></header>
+<main id="content"></main>
+<footer class="app-footer"><span>Remember intelligently. Retrieve selectively. Influence carefully.</span><span>AI MEMORY ENGINE <span class="footer-sep">/</span> LOCAL PROTOTYPE</span></footer></div>
+<dialog id="memory-dialog"><div id="memory-detail"></div></dialog><div id="toast" role="status" hidden></div>
+</body></html>
